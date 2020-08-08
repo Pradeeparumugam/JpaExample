@@ -42,7 +42,8 @@ public class TraineeMain {
 		boolean bool=trainee instanceof CSTrainee; 
 		if(bool) {
 			set1.add(bool);
-			//System.out.println(key.getId()+" "+key.getName()+" "+key.getLang());
+			
+			System.out.println(bool.getId()+bool.getName()+bool.getLang());
 			}
 		else {
 			set2.add(bool);

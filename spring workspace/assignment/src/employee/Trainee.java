@@ -31,7 +31,7 @@ public class Trainee {
 			return false;
 		}
 		Trainee t=(Trainee)ob;
-		boolean result=this.id equals(t.id);
+		boolean result=this.id==(t.id);
 		return true;
 	}
 	
