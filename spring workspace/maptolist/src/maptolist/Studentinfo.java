@@ -25,16 +25,16 @@ public class Studentinfo {
 		return h;
 	}
 	@Override
-	public boolean checkEquals(Object a) {
+	public boolean equals(Object a) {
 		if(a==this) {
 			return true;
 			
 		}
-		if(a==null || !(a instanceof studentinfo)) {
+		if(a==null || !(a instanceof Studentinfo)) {
 			return false;
 			
 		}
-		Studentinfo st=(studentinfo)a;
+		Studentinfo st=(Studentinfo)a;
 		boolean result=this.rollno==(st.rollno);
 		return result;
 		
