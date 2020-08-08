@@ -35,7 +35,7 @@ public class Studentinfo {
 			
 		}
 		Studentinfo st=(studentinfo)a;
-		boolean result=this.rollno equals(st.rollno);
+		boolean result=this.rollno==(st.rollno);
 		return result;
 		
 	}
