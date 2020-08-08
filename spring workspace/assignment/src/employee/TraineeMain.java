@@ -5,8 +5,8 @@ import java.util.*;
 public class TraineeMain {
 	
 	Map<Integer,Trainee> map=new HashMap<>();
-	Set<CSTrainee> set1= new HashSet<>();
-	Set<ECETrainee> set2=new HashSet<>();
+	Set<CSTrainee> cstrainee= new HashSet<>();
+	Set<ECETrainee> ecetrainee=new HashSet<>();
 	
 	public static void main(String args[]) {
 		
@@ -32,7 +32,6 @@ public class TraineeMain {
 		//set2.add(ece2);
 		
 		displayAll();
-		equalshash();
 		}
 		
 	public void displayAll() {
@@ -41,22 +40,20 @@ public class TraineeMain {
 		
 		boolean bool=trainee instanceof CSTrainee; 
 		if(bool) {
-			set1.add(bool);
+			CSTrainee trainee1=(CSTrainee)trainee;
+			cstrainee.add(trainee1);
 			
-			System.out.println(bool.getId()+bool.getName()+bool.getLang());
+			System.out.println(trainee1.getId()+" "+trainee1.getName()+" "+trainee1.getLang());
 			}
 		else {
-			set2.add(bool);
+			
+			ECETrainee trainee1=(ECETrainee)trainee;
+			ecetrainee.add(trainee1);
+			System.out.println(trainee1.getId()+" "+trainee1.getName()+" "+trainee1.getDevice());
+			
 		}
 		}
-		public void equalshash() {
-			Set<Integer> keys=map.keySet();
-			for(Integer k:keys) {
-				int i=hashCode();
-				return i;	
-				checkEqual(k);
-			}
-		}
+		
 	}
 	 
 }

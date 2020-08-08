@@ -20,8 +20,8 @@ public class Trainee {
 		this.name = name;
 	}
 	public int hashCode() {
-		int hash=k.hashCode();
-		return hash;
+		//int hash=hashCode();
+		return id;
 	}
 	public boolean checkEqual(Object ob) {
 		if(ob==this) {
@@ -31,8 +31,8 @@ public class Trainee {
 			return false;
 		}
 		Trainee t=(Trainee)ob;
-		boolean result=this.id==(t.id);
-		return true;
+		boolean result=this.id==t.id;
+		return result;
 	}
 	
 	
