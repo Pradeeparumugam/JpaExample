@@ -16,7 +16,7 @@ public class Operations implements Operator {
 	}
 
 	// read
-	public Object displaybook(String id) {
+	public Book displaybook(String id) {
 		checkId(id);
 		checkValid(id);
 		Book book = m.get(id);

@@ -2,8 +2,9 @@ package org.libraryapp.ui;
 
 import java.util.Map;
 
+
 import java.util.*;
-import org.libraryapp.dao.*;
+//import org.libraryapp.dao.*;
 
 import org.libraryapp.entities.*;
 
@@ -22,8 +23,8 @@ public class Main {
 		Book b1 = new Book("1", "book1", 1348, a1);
 		Book b2 = new Book("2", "book2", 99.99, a2);
 
-		FictionBook fb1 = new FictionBook("charname");
-		ITbook itb1 = new ITbook("Tamil", 1.0);
+		//FictionBook fb1 = new FictionBook("charname");
+		//ITbook itb1 = new ITbook("Tamil", 1.0);
 		b.put(b1.getId(), b1);
 		b.put(b2.getId(), b2);
 

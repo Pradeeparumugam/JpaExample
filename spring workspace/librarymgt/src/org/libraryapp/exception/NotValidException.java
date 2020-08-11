@@ -1,8 +1,8 @@
 package org.libraryapp.exception;
 
-public class NotValidException {
-	public String NotValidException(String alert) {
-		return alert;
+public class NotValidException extends RuntimeException {
+	public NotValidException(String alert) {
+		super(alert);
 	}
 
 }

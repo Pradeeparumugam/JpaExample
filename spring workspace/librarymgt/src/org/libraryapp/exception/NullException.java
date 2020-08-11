@@ -1,8 +1,8 @@
 package org.libraryapp.exception;
 
-public class NullException {
-	public String  NullException(String alert) {
-		return alert;
+public class NullException extends RuntimeException{
+	public NullException(String alert) {
+		super(alert);
 		
 	}
 }
