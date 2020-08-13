@@ -1,6 +1,10 @@
 package com.dxctraining.entities;
 
+@Entity
 public class Iteminfo {
+	
+	@Id 
+	 @GeneratedValue 
 	private int id;
 	private String name;
 	public Iteminfo(int id,String name) {
